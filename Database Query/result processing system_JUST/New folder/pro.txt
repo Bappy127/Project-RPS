@@ -1,0 +1,32 @@
+drop procedure ins_jstu;
+create procedure ins_jstu
+(p_id IN jstu.t_id%type,
+p_name IN jstu.t_name%type,
+p_exc OUT varchar2)
+IS
+BEGIN
+	insert into jstu
+	values(p_id,upper(p_name));
+commit;
+p_exc:='Successfully Added';
+EXCEPTION
+	WHEN DUP_VAL_ON_INDEX THEN
+		p_exc:='Already exists';
+	WHEN OTHERS THEN
+		p_exc:='Invalid';
+
+
+END ins_jstu;
+/
+
+
+drop procedure view_tname;
+create procedure view_tname
+(t_cursor OUT sys_refcursor)
+IS
+BEGIN
+	open t_cursor for
+	select t_id,t_name from jstu;
+
+END view_tname;
+/

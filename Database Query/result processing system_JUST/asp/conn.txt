@@ -1,0 +1,50 @@
+string strConnectionString= "Data Source=(DESCRIPTION="
+             + "(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=_YOUR_SERVER_NAME_)(PORT=_YOUR_SERVER_PORT_)))"
+             + "(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=_YOUR_SERVICE_NAME_)));"
+             + "User Id=YourUserID;Password=YourPassword;"; 
+
+
+
+Create a new project in Visual Studio using eight C#
+
+Add reference to Oracle.DataAccess.dll file.
+
+Typically this file can be found in C:\oracle\product\10.2.0\client_1\BIN directory. This directory may be different based on your oracle configuration.
+
+using Oracle.DataAccess.Client; // C#
+
+OracleDb= (DESCRIPTION= (ADDRESS_LIST= (ADDRESS=(PROTOCOL=TCP)(HOST=OTNSRVR)(PORT=1521)) ) (CONNECT_DATA= (SERVER=DEDICATED) (SERVICE_NAME=ORCL) ) )
+
+string OracleDb = "Data Source=OracleDb;User Id=scott;Password=tiger;"; // C#
+
+string OracleDb = "Data Source=(DESCRIPTION="
+
+"(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=ORASRVR)(PORT=1521)))"
+
+"(CONNECTDATA=(SERVER=DEDICATED)(SERVICENAME=ORCL)));"
+
+"User Id=scott;Password=tiger;";
+
+OracleConnection conn = new OracleConnection(OracleDb); // C#
+
+DBConnection.Open(); // C#
+
+string sql = "select dname from dept where deptno = 10"; // C#
+
+OracleCommand cmd = new OracleCommand(sql, conn);
+
+cmd.CommandType = CommandType.Text;
+
+OracleDataReader dr = cmd.ExecuteReader(); // C#
+
+dataread.Read();
+
+lblCaptionText = dr["dname"].ToString(); // C# retrieve by column name
+
+lblCaptionText = dataread.GetString(0).ToString(); // return a .NET data type
+
+lblCaptionText = dataread.GetOracleString(0).ToString(); // return an Oracle data type
+
+DBConnection.Close(); // C#
+
+DBConnection.Dispose(); // C#

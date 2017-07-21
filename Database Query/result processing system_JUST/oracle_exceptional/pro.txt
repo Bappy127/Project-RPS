@@ -1,0 +1,84 @@
+function using to split up the input values
+
+CREATE OR REPLACE function fn_get_colors(
+    s_list  varchar2,
+    i_index number,
+    s_delim varchar2
+)
+    return    varchar2
+is
+    start_pos number;
+    end_pos   number;
+begin
+    if i_index = 1 then
+        start_pos := 1;
+    else
+        start_pos := instr(s_list,s_delim,1,i_index - 1);
+        if start_pos = 0 then
+            return null;
+        else
+            start_pos := start_pos + length(s_delim);
+        end if;
+    end if;
+
+    end_pos := instr(s_list,s_delim,start_pos,1);
+
+    if end_pos = 0 then
+        return substr(s_list,start_pos);
+    else
+        return substr(s_list,start_pos,end_pos - start_pos);
+    end if;
+
+end fn_get_colors;
+/
+
+procedure to insert/update records from function
+
+CREATE OR REPLACE PROCEDURE PROC_MAPPING
+ (
+  IN_TYPE          NUMBER,
+  IN_COLORS     IN VARCHAR2,  --input parameter eg: blue|red|orange|green|... etc
+  IN_CNTDELIM   IN NUMBER,  --uses for which records to insert/update
+  OUT_STATUS   OUT VARCHAR2
+ )
+
+IS
+
+IN_ARRAY    VARCHAR2(32767):= ''||IN_COLORS;
+OUT_VALUE   VARCHAR2(32767):='';
+ICNT        NUMBER :=1;
+iCOUNT      NUMBER;
+
+BEGIN
+    OUT_STATUS := '1';
+
+    LOOP
+       IF ICNT <= IN_CNTDELIM THEN
+          SELECT FN_GET_COLORS(IN_ARRAY, ICNT, '|') INTO OUT_VALUE FROM DUAL;
+
+          IF IN_TYPE = 1 THEN
+             SELECT NVL(MAX(ID), 0) + 1 INTO iCOUNT FROM TBL_BLOCKS_MAPPING;
+             INSERT INTO TBL_BLOCKS_MAPPING (ID, COLOR_NAME) VALUES (iCOUNT, OUT_VALUE);
+          END IF;
+
+          IF IN_TYPE = 2 THEN
+            --UPDATE TBL_BLOCKS_MAPPING
+          END IF;
+
+          COMMIT;
+          OUT_STATUS := '0';
+          ICNT := ICNT +1;
+       ELSE
+          ICNT:=1;
+          EXIT;
+       END IF;
+
+    END LOOP;
+
+EXCEPTION
+
+WHEN OTHERS THEN
+OUT_STATUS := '1';
+
+END;
+/

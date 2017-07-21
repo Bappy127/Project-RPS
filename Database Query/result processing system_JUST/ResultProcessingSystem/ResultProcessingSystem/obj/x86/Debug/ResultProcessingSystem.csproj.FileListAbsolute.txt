@@ -1,0 +1,31 @@
+D:\Users\^^\Documents\Visual Studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\bin\Debug\ResultProcessingSystem.exe
+D:\Users\^^\Documents\Visual Studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\bin\Debug\ResultProcessingSystem.pdb
+D:\Users\^^\Documents\Visual Studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Users\^^\Documents\Visual Studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResultProcessingSystem.Properties.Resources.resources
+D:\Users\^^\Documents\Visual Studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Users\^^\Documents\Visual Studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Users\^^\Documents\Visual Studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResultProcessingSystem.exe
+D:\Users\^^\Documents\Visual Studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResultProcessingSystem.pdb
+D:\Users\^^\Documents\Visual Studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResultProcessingSystem.view_faculty.resources
+D:\Users\^^\Documents\Visual Studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResultProcessingSystem.faculty_class.resources
+D:\Users\^^\documents\visual studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResultProcessingSystem.FormMenu.resources
+D:\Users\^^\documents\visual studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResultProcessingSystem.departmentFolder.FormDeptManup.resources
+D:\Users\^^\documents\visual studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\bin\Debug\ResultProcessingSystem.exe.manifest
+D:\Users\^^\documents\visual studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\bin\Debug\ResultProcessingSystem.application
+D:\Users\^^\documents\visual studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResultProcessingSystem.exe.manifest
+D:\Users\^^\documents\visual studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResultProcessingSystem.application
+D:\Users\^^\documents\visual studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResultProcessingSystem.departmentFolder.FormDepartment.resources
+D:\Users\^^\documents\visual studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResultProcessingSystem.programfolder.ManiProgForm.resources
+D:\Users\^^\documents\visual studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResultProcessingSystem.programfolder.viewPrgForm.resources
+D:\Users\^^\documents\visual studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\bin\Debug\ResultProcessingSystem.exe.config
+D:\Users\^^\documents\visual studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResultProcessingSystem.semesterFolder.semEdit.resources
+D:\Users\^^\documents\visual studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResultProcessingSystem.semesterFolder.semShow.resources
+D:\Users\^^\documents\visual studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResultProcessingSystem.gradeFolder.editGrd.resources
+D:\Users\^^\documents\visual studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResultProcessingSystem.gradeFolder.showGrd.resources
+D:\Users\^^\documents\visual studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResultProcessingSystem.sessionsFolder.delSess.resources
+D:\Users\^^\documents\visual studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResultProcessingSystem.sessionsFolder.editSess.resources
+D:\Users\^^\documents\visual studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResultProcessingSystem.sessionsFolder.editSessNew.resources
+D:\Users\^^\documents\visual studio 2010\Projects\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResultProcessingSystem.sessionsFolder.UpdateSess.resources
+F:\JUST\Official Project\result processing system_JUST\ResultProcessingSystem\ResultProcessingSystem\bin\Debug\ResultProcessingSystem.exe.config
+F:\JUST\Official Project\result processing system_JUST\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResultProcessingSystem.exe
+F:\JUST\Official Project\result processing system_JUST\ResultProcessingSystem\ResultProcessingSystem\obj\x86\Debug\ResultProcessingSystem.pdb
