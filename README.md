@@ -1,3 +1,3 @@
 # Project-RPS
 
-This my Final Year project in university.
+This is my Final Year project in university.
